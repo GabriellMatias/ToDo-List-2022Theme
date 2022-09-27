@@ -1,0 +1,16 @@
+.header{
+  position: absolute;
+  height: 200px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: var(--gray-700);
+}
+
+.header img{
+  position: absolute;
+  width: 126px;
+  height: 48px;
+  left: 657px;
+  top: 72px;
+}

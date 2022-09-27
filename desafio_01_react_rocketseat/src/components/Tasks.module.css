@@ -1,0 +1,311 @@
+.taskContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 736px;
+  height: 287px;
+  left: calc(50% - 736px/2);
+  top: 291px;
+  
+}
+
+.headerTask{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 56px;
+
+  width: 700px;
+  height: 19px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  
+}
+
+.createdTasks{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 139px;
+  height: 19px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+ 
+}
+
+.createdTasks > strong{
+  width: 106px;
+  height: 17px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+
+  /* Blue */
+
+  color:var(--blue);
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.createdTasks > span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  gap: 10px;
+
+  width: 25px;
+  height: 19px;
+
+  /* Gray 400 */
+
+  background:var(--gray-400);
+  border-radius: 999px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.concludeTasks{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 111px;
+  height: 19px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.concludeTasks > strong{
+  width: 78px;
+  height: 17px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+
+  /* Purple */
+
+  color: var(--purple);
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.concludeTasks > span{
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 8px;
+  gap: 10px;
+
+  width: auto;
+  height: 19px;
+
+
+
+  background: var(--gray-400);
+  border-radius: 999px;
+
+ 
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  
+  
+}
+
+.taskList{
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 24px;
+  gap: 16px;
+
+  width: 736px;
+  height: 244px;
+
+  /* Grey 400 */
+
+  border-top: 1px solid #333333;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.taskListText{
+  width: 688px;
+  height: 44px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  text-align: center;
+
+  /* Gray 300 */
+
+  color: var(--gray-300);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.newtask{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 736px;
+  height: 54px;
+  left: calc(50% - 736px/2);
+  top: 173px;
+}
+
+.newtask input{
+
+  resize: none;
+  box-sizing: border-box;
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+
+  width: 638px;
+  height: 54px;
+
+  background: var(--gray-500);
+
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  color: var(--white);
+}
+.newtask input::placeholder{
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: var(--gray-300);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.newtask button{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+
+  width: 90px;
+  height: 52px;
+
+  /* Blue Dark */
+
+  background: var(--darkBlue);
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  cursor: pointer;
+  color: var(--white);
+  border: 0;
+}
+
+.newtask button[type = submit]:disabled{
+  opacity: 0.8;
+  cursor: not-allowed;
+}
