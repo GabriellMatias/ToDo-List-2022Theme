@@ -1,6 +1,7 @@
 
 <h1 align="center"> 
-  <img width="150px" src="https://user-images.githubusercontent.com/80908772/194680070-87fbc668-aee7-40d4-98d9-64ba84bf08c5.png"/>
+
+  <img src="https://github.com/GabriellMatias/ToDo-List-2022Theme/assets/80908772/5a08f119-cacc-4d54-a3d3-6dd8f40d5047"/>
 </h1>
 <br/>
 
